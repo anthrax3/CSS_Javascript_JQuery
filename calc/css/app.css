@@ -1,0 +1,90 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.calc {
+  margin: 0 auto;
+  width: 212px;
+  height: 235px;
+  background: #D9E4F1;
+  border: solid 1px #102a3e; }
+  .calc button {
+    width: 34px;
+    height: 27px;
+    border: 1px solid #9EAABB;
+    border-radius: 3px;
+    margin-bottom: 5px; }
+    .calc button:hover {
+      cursor: pointer; }
+  .calc #display {
+    width: 190px;
+    margin: 0px;
+    border: 1px solid #aaa;
+    font-size: 40px;
+    color: #333;
+    text-align: right;
+    font-size: 40px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    border-radius: 3px;
+    background: #fff; }
+  .calc .num-wrap {
+    margin: 20px auto;
+    width: 193px; }
+  .calc #n0 {
+    width: 71px;
+    height: 25px; }
+  .calc #neq {
+    width: 34px;
+    height: 59px;
+    float: right; }

@@ -1,0 +1,88 @@
+@import "compass";
+@import "compass/reset";
+
+*{ @include box-sizing(border-box); }
+
+h1{
+	text-align: center;
+
+	span{
+		font-weight: bold;
+	}
+}
+
+#wrapper {
+	@include perspective(800px);
+	@include perspective-origin(50% 105px);
+
+	#cube {
+		position: relative;
+		margin: 100px auto;
+		height: 210px;
+		width: 210px;
+		@include transition(-webkit-transform 1s linear);
+		@include transform-style(preserve-3d);
+
+		.side {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+
+			.square {
+				width: 70px;
+				height: 70px;
+				border: 3px solid #000;
+				@include border-radius(10px);
+				float: left;
+
+				&.red{
+					background-color: red;
+				}
+
+				&.green {
+					background-color: green;
+				}
+
+				&.blue {
+					background-color: blue;
+				}
+
+				&.yellow {
+					background-color: yellow;
+				}
+
+				&.orange {
+					background-color: orange;
+				}
+
+				&.white {
+					background-color: white;
+				}
+
+				&:hover{
+					border: 3px solid #C3C3C3;
+				} 
+			}
+		}
+	}
+}
+
+#front {
+	@include transform(rotateY(0deg) translateZ(105px));
+}
+#right {
+	@include transform(rotateY(90deg) translateZ(105px));
+}
+#left {
+	@include transform(rotateY(-90deg) translateZ(105px));
+}
+#top {
+	@include transform(rotateX(90deg) translateZ(105px));
+}
+#bottom {
+	@include transform(rotateX(-90deg) translateZ(105px));
+}
+#back {
+	@include transform(rotateX(180deg) translateZ(105px));
+}

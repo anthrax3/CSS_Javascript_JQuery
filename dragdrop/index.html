@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drag &amp; Drop jQuery</title>
+	<meta name="author" content="villers mickaël" >
+	<meta name="keywords" content="projet, drag, drop, jquery, academie" >
+	<meta name="description" content="projet d'un Drag réalisé pour la Web academie" >
+	<meta name="robots" content="index, follow">
+	<link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+	<div id="board">
+		<div>
+		  <h3>À faire</h3><h3>En cours</h3><h3>Fait</h3>
+		</div>
+		<ul id="todo">
+			<li id="item1" draggable="true">Tache 1</li>
+			<li id="item2" draggable="true">Tache 2</li>
+			<li id="item3" draggable="true">Tache 3</li>
+		</ul>
+		<ul id="inprogress"></ul>
+		<ul id="done"></ul>
+	</div>
+
+	<script src="../jquery-2.1.1.js"></script>
+	<script src="drop.js"></script>
+</body>
+</html>

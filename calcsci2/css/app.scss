@@ -1,0 +1,69 @@
+@import "compass";
+@import "compass/reset";
+
+*{ @include box-sizing(border-box); }
+
+.calc{
+	margin: 0 auto;
+	width: 213px;
+	background: #D9E4F1;
+	border: solid 1px #102a3e;
+
+	button{
+		width: 34px;
+		height: 27px;
+		border: 1px solid #9EAABB;
+		border-radius: 3px;
+		margin-bottom: 5px;
+
+		&:hover{
+			cursor:pointer;
+		}
+	}
+
+	#display{
+		width: 190px;
+		margin: 0px;
+		border: 1px solid #aaa;
+		font-size: 40px;
+		color: #333;
+		text-align: right;
+		font-size: 40px;
+		position: relative;
+		top: 10px;
+		left: 10px;
+		height: 50px;
+		border-radius: 3px;
+		background: #fff;
+	}
+
+	.num-wrap{
+		margin: 20px auto;
+		width: 193px;
+	}
+
+	#n0{
+		width: 71px;
+		height: 25px;
+	}
+
+	#neq{
+		width: 34px;
+		height: 59px;
+		float: right;
+	}
+
+	.btn {
+		text-align: center;
+		background: #C3C3C3;
+		color: #fff;
+		width: 212px;
+		display: block;
+		text-decoration: none;
+	}
+
+	.btn:hover {
+	  color: #000;
+	}
+
+}

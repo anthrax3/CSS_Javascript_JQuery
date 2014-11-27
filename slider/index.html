@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider jQuery</title>
+    <meta name="author" content="villers mickaël" >
+	<meta name="keywords" content="projet, slider, jquery, academie" >
+	<meta name="description" content="projet d'un slider réalisé pour la Web academie" >
+	<meta name="robots" content="index, follow">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+    <div class="slide">
+		<div class="l-container">
+			<div class="slideshow">
+				<ul>
+					<li><a href="#prev" class="prev"></a></li>
+					<li><a href="#next" class="next"></a></li>
+				</ul>
+				<figure class="show">
+					<img src="img/6.jpg" alt="..." >
+				</figure>
+				<figure>
+					<img src="img/7.jpg" alt="..." >
+					<figcaption>Trip to travel <a href="#">around</a> the world 2</figcaption>
+				</figure>
+				<figure>
+					<img src="img/8.jpg" alt="..." >
+					<figcaption>Trip to travel around the world 3</figcaption>
+				</figure>
+				<figure>
+					<img src="img/9.jpg" alt="..." >
+					<figcaption>Trip to travel around the world 4</figcaption>
+				</figure>
+				<figure>
+					<img src="img/10.jpg" alt="..." >
+					<figcaption>Trip to travel around the world 5</figcaption>
+				</figure>
+				<figure>
+					<img src="img/11.jpg" alt="..." >
+					<figcaption>Trip to travel around the world 6</figcaption>
+				</figure>
+			</div>
+			<nav>
+				<ul class="dots_commands">
+					<li>
+						<a title="Afficher la slide 1" href="#sl_i1" data-id="1" class="active">&nbsp;</a>
+						<img src="img/6.jpg" alt="..." >
+					</li>
+					<li>
+						<a title="Afficher la slide 2" href="#sl_i2" data-id="2">&nbsp;</a>
+						<img src="img/7.jpg" alt="..." >
+					</li>
+					<li>
+						<a title="Afficher la slide 3" href="#sl_i3" data-id="3">&nbsp;</a>
+						<img src="img/8.jpg" alt="..." >
+					</li>
+					<li>
+						<a title="Afficher la slide 4" href="#sl_i4" data-id="4">&nbsp;</a>
+						<img src="img/9.jpg" alt="..." >
+					</li>
+					<li>
+						<a title="Afficher la slide 5" href="#sl_i6" data-id="5">&nbsp;</a>
+						<img src="img/10.jpg" alt="..." >
+					</li>
+					<li>
+						<a title="Afficher la slide 6" href="#sl_i6" data-id="6">&nbsp;</a>
+						<img src="img/11.jpg" alt="..." >
+					</li>
+				</ul>
+			</nav>
+			<select name="selection">
+				<option value="ease">ease effect</option>
+				<option value="slideUp">slideUp effect</option>
+				<option value="slideRight">slideRight effect</option>
+				<option value="slideUpRight">slideUpRight effect</option>
+			</select>
+		</div>
+	</div>
+
+    <script src="../jquery-2.1.1.js"></script>
+    <script src="slide.js"></script>
+</body>
+</html>

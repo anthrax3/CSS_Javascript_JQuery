@@ -1,0 +1,170 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Variables */
+.l-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.slide {
+  padding-top: 25px;
+}
+.slide .slideshow {
+  position: relative;
+  width: 940px;
+  height: 360px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 5px 30px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 5px 30px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 5px 30px 0px rgba(50, 50, 50, 0.75);
+}
+.slide .slideshow li a {
+  z-index: 99;
+  position: absolute;
+  top: 150px;
+  height: 45px;
+  width: 45px;
+}
+.slide .slideshow .prev {
+  background-image: url("../img/2.png");
+  left: 10px;
+  opacity: 0.8;
+}
+.slide .slideshow .prev:hover {
+  opacity: 1;
+}
+.slide .slideshow .next {
+  background-image: url("../img/2.png");
+  right: 10px;
+  background-position: -45px 0px;
+  opacity: 0.8;
+}
+.slide .slideshow .next:hover {
+  opacity: 1;
+}
+.slide .slideshow figure {
+  opacity: 0;
+  position: absolute;
+  transition: 1s opacity;
+}
+.slide .slideshow figure.show {
+  opacity: 1;
+  position: static;
+  transition: 1s opacity;
+}
+.slide .slideshow figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border-top: 1px solid #000;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+.slide .slideshow figcaption a {
+  color: #9a99ff;
+}
+.slide .slideshow figcaption a:hover {
+  color: #ccffff;
+}
+.slide .dots_commands {
+  margin: 25px auto;
+  padding-top: 5px;
+  text-align: center;
+}
+.slide .dots_commands li {
+  display: inline;
+  position: relative;
+}
+.slide .dots_commands li:first-child a {
+  z-index: 25;
+}
+.slide .dots_commands li img {
+  display: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.slide .dots_commands li:hover img {
+  width: 100px;
+  height: 40px;
+  top: -40px;
+  left: -35px;
+  position: absolute;
+  display: block;
+}
+.slide .dots_commands a {
+  width: 27px;
+  height: 30px;
+  background: url("../img/1.png") 0 0 no-repeat;
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  text-indent: -9999px;
+}
+.slide .dots_commands a:hover {
+  background-position: 0 -30px;
+}
+.slide .dots_commands a:active, .slide .dots_commands a:focus, .slide .dots_commands a.active {
+  background-position: 0 -60px;
+}
